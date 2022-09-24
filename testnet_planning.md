@@ -10,7 +10,7 @@ Everything is subject to change and as close as possible to the realities of tes
 - Governance proposals
     - Enable Transfers
 - Rewards: `To keep the competitive process going, we see the validators with the most points and they will be rewarded`
-- Schedule: `date this`
+- Schedule: `26.09.2022 - 16.10.2022`
 - For the Genesis and Celebrate sections please sign a transaction for each of the tasks and provide the txHash in a PR.
 
 ## **Phase - 1: Start chain (max 30 points)**
@@ -19,7 +19,7 @@ Everything is subject to change and as close as possible to the realities of tes
 
  `25 Points = 25 000 atom for successful wallet submissions.`
 
-- Network start time:  `time start chain wiil be refined for a specific course`
+- Network start time:  `28.09.2022 15:00 UTC`
 
 `20 Points = 20 000 atom for set up post genesis validators.`
 
@@ -31,7 +31,7 @@ Everything is subject to change and as close as possible to the realities of tes
 
 ## **Phase - 2: Governance (max 30 points)**
 
-Lead validator team will create a governance proposal on `date wiil be refined for a specific course`, to update the transfer parameter. You will need to study the proposals, find the correct one and vote.
+Lead validator team will create a governance proposal on `05.10.2022 15:00 UTC`, to update the transfer parameter. You will need to study the proposals, find the correct one and vote.
 
 In order to find correct proposal you will need to run query command using your network client binary (`gaiad` in our case). Please issue following command `gaiad query gov proposals`, and find proposal with `title:` ”Vote for me friend”.
 
@@ -39,8 +39,8 @@ In order to find correct proposal you will need to run query command using your 
 
 **Update Schedule:**
 
-- Proposal: `date and time wiil be refined for a specific course`
-- Voting Period: `date and time proposal wiil be refined for a specific course`
+- Proposal: `Update true`
+- Voting Period: `05.10.2022 15:00 UTC - 06.10.2022 23:00 UTC`
 - Upgrade Height: `TBD`
 
 **What should validators do?**
