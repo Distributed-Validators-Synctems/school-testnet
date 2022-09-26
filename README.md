@@ -17,7 +17,7 @@ build_tags: netgo ledger
 
 ### Init
 ```bash:
-gaiad init "<moniker-name>" --chain-id <current course chain id>
+gaiad init "<moniker-name>" --chain-id school-testnet-1
 ```
 
 ### Generate keys
@@ -48,7 +48,7 @@ gaiad keys show <key-name> -a
 ### Create account to genesis
 
 ```
-gaiad add-genesis-account <key-name> 1000000000uatom --keyring-backend <os | file>
+gaiad add-genesis-account <key-name> 1000000000uatom --keyring-backend os
 ```
 
 ### Create GenTX
