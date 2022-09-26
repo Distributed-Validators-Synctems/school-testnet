@@ -57,7 +57,7 @@ gaiad add-genesis-account <key-name> 1000000000uatom --keyring-backend os
 # Create the gentx.
 # Note, your gentx will be rejected if you use any amount greater than 1000000000uatom.
 gaiad gentx <key-name> 1000000000uatom --output-document=gentx.json \
-  --chain-id=dvs-protocol-v1 \
+  --chain-id=school-testnet-1 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --details=<your-node-details> \
