@@ -39,8 +39,8 @@ build_tags: netgo ledger
 
 ### Network init
 
-`cd ~`
-`gaiad init "<moniker-name>" --chain-id school-testnet-1
+` cd ~ `
+` gaiad init "<moniker-name>" --chain-id school-testnet-1 `
 
 example:
 
