@@ -128,7 +128,7 @@ gaiad tx staking create-validator \
 
 Set up cosmovisor to ensure any future upgrades happen flawlessly. To install Cosmovisor:
 
-`go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v1.0.0`
+`go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v1.3.0`
 
 Create the required directories:
 
