@@ -1,4 +1,4 @@
-#!/bin/bash -i
+#!/bin/bash
 
 # This schell script is modified from the existing script at https://github.com/cosmos/testnets/tree/master/public#bash-script 
 # It is modified to work with the DVS Posthuman Validator school-testnet-1
@@ -24,11 +24,11 @@ export BINARY=gaiad
 export CHAIN_ID=school-testnet-1 # maybe change this if necessary!
 
 # Change these values below
-export NEW_USER=Monarch
+export NEW_USER=Monarch_validator
 export NODE_MONIKER=Monarch
-export KEY_NAME=Monarch-key
+export KEY_NAME=Monarch_key
 export WEBSITE=https://gorgeous-penalty-e5f.notion.site/Test-Notion-Site-d53a3f11e90a40e8a253322041d46595
-export NODE_DETAILS="Monarch"
+export NODE_DETAILS="Monarch gaia testnet validator."
 
 ##### CONFIGURATION ###
 
@@ -62,6 +62,8 @@ export GOROOT=$HOME/.go
 export PATH=$GOROOT/bin:$PATH
 export GOPATH=/root/go
 export PATH=$GOPATH/bin:$PATH
+
+source ~/.profile
 
 # clone gaia repository
 echo "Getting gaia..."
