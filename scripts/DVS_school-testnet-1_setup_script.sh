@@ -177,3 +177,5 @@ sudo systemctl start $NODE_MONIKER.service
 
 # restart the system journal daemon
 sudo systemctl restart systemd-journald
+
+# test
