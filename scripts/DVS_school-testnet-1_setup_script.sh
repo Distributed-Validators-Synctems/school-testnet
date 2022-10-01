@@ -175,10 +175,5 @@ echo "starting the daemon..."
 sudo systemctl enable $NODE_MONIKER.service
 sudo systemctl start $NODE_MONIKER.service
 
-# enable and start gaiad
-echo "starting gaiad..."
-sudo systemctl enable gaiad
-sudo systemctl start gaiad
-
 # restart the system journal daemon
 sudo systemctl restart systemd-journald
