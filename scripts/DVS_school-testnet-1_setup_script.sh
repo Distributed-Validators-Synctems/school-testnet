@@ -24,11 +24,11 @@ export BINARY=gaiad
 export CHAIN_ID=school-testnet-1 # maybe change this if necessary!
 
 # Change these values below
-export NEW_USER=<enter your new user name here>
-export NODE_MONIKER=my-node
-export KEY_NAME=test_key
-export WEBSITE=https://google.com
-export NODE_DETAILS="Details about my node!"
+export NEW_USER=Monarch
+export NODE_MONIKER=Monarch
+export KEY_NAME=Monarch-key
+export WEBSITE=https://gorgeous-penalty-e5f.notion.site/Test-Notion-Site-d53a3f11e90a40e8a253322041d46595
+export NODE_DETAILS="Monarch"
 
 ##### CONFIGURATION ###
 
@@ -104,7 +104,7 @@ gaiad add-genesis-account $KEY_NAME 1000000000uatom
 echo "Creating gentx file..."
 gaiad gentx $KEY_NAME 1000000000uatom --output-document=gentx.json \
   --chain-id=$CHAIN_ID \
-  --moniker=$MONIKER_NAME \
+  --moniker=$NODE_MONIKER \
   --website=$WEBSITE \
   --details=$NODE_DETAILS \
   --commission-rate="0.10" \
@@ -120,7 +120,7 @@ gaiad gentx $KEY_NAME 1000000000uatom --output-document=gentx.json \
    # --amount=1000000000uatom \
    # --pubkey=$(gaiad tendermint show-validator) \
    # --chain-id=$CHAIN_ID \
-   # --moniker=$MONIKER_NAME \
+   # --moniker=$NODE_MONIKER \
    # --website=$WEBSITE \
    # --details=$NODE_DETAILS \
    # --commission-rate="0.10" \
