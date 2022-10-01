@@ -86,7 +86,7 @@ gaiad gentx <key-name> 1000000000uatom --output-document=gentx.json \
   --min-self-delegation="1"
 ```
 
-After gentx will be ready you can find it in the `~/.gaiad/config/gentx` directory. After that you will be required to upload it into `gentxs` directory of this repository. Please name it using following template `gentx-<validator name>.json`.
+After gentx will be ready you can find it in the `~/.gaia/config/gentx` directory. After that you will be required to upload it into `gentxs` directory of this repository. Please name it using following template `gentx-<validator name>.json`.
 
 In order to upload this file you will need to create fork of this repository. Please click on “Fork” button in the top right corner of this page, and name it somehow or leave repository name unchanged.
 
@@ -133,11 +133,11 @@ Set up cosmovisor to ensure any future upgrades happen flawlessly. To install Co
 Create the required directories:
 
 ```
-mkdir -p ~/.gaiad/cosmovisor/genesis/bin
-mkdir -p ~/.gaiad/cosmovisor/upgrades
+mkdir -p ~/.gaia/cosmovisor/genesis/bin
+mkdir -p ~/.gaia/cosmovisor/upgrades
 ```
 
-After directories will be ready please copy `gaiad` binaries created in the “Cosmos Hub binaries installation (gaiad)” section into `~/.gaiad/cosmovisor/genesis/bin` directory. You can do it using `cp ~/go/bin/gaiad ~/.gaiad/cosmovisor/genesis/bin/gaiad` command.
+After directories will be ready please copy `gaiad` binaries created in the “Cosmos Hub binaries installation (gaiad)” section into `~/.gaia/cosmovisor/genesis/bin` directory. You can do it using `cp ~/go/bin/gaiad ~/.gaia/cosmovisor/genesis/bin/gaiad` command.
 
 ### ****Set Up Gaiad Service****
 
@@ -149,7 +149,7 @@ Description=Cosmos Hub daemon
 After=network-online.target
 [Service]
 Environment="DAEMON_NAME=gaiad"
-Environment="DAEMON_HOME=${HOME}/.gaiad"
+Environment="DAEMON_HOME=${HOME}/.gaia"
 Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
 Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
 Environment="DAEMON_LOG_BUFFER_SIZE=512"
