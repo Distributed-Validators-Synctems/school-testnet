@@ -170,9 +170,15 @@ sudo mv cosmovisor.service /etc/systemd/system/$NODE_MONIKER.service
 echo "reload systemd..."
 sudo systemctl daemon-reload
 
-# start the service
+# enable and start the service
 echo "starting the daemon..."
+sudo systemctl enable $NODE_MONIKER.service
 sudo systemctl start $NODE_MONIKER.service
+
+# enable and start gaiad
+echo "starting gaiad..."
+sudo systemctl enable gaiad
+sudo systemctl start gaiad
 
 # restart the system journal daemon
 sudo systemctl restart systemd-journald
