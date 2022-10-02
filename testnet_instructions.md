@@ -8,7 +8,7 @@ Block explorer: `TBA`
 
 Seeds: TBA
 
-Chain Id: TBA
+Chain Id: school-testnet-1
 
 ## **Hardware Requirements**
 
