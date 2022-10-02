@@ -2,11 +2,11 @@
 
 ## **Quick Links**
 
-Genesis: [link](https://github.com/Distributed-Validators-Synctems/school-testnet-1/raw/master/genesis.json)
+Genesis: [link](https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-1/master/genesis.json)
 
 Block explorer: `TBA`
 
-Persistent peers: [link](https://github.com/Distributed-Validators-Synctems/school-testnet-1/raw/master/peers.txt)
+Persistent peers: [link](https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-1/master/peers.txt)
 
 Chain Id: school-testnet-1
 
