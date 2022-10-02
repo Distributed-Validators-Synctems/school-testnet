@@ -128,7 +128,7 @@ gaiad tx staking create-validator \
 
 To download genesis:
 
-`$ curl https://github.com/Distributed-Validators-Synctems/school-testnet-1/raw/master/genesis.json > ~/.gaia/config/genesis.json`
+`$ curl https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-1/master/genesis.json > ~/.gaia/config/genesis.json`
 
 After downloading you need to verify your `genesis.json` checksum
 
