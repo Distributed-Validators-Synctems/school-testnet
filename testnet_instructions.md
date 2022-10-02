@@ -44,7 +44,7 @@ build_tags: netgo ledger
 
 example:
 
-`gaiad init course-participant-1 --chain-id dvs-course-testnet-1`
+`gaiad init course-participant-1 --chain-id school-testnet-1`
 
 ### **Create Validator Key**
 
@@ -76,7 +76,7 @@ Create the gentx file. Note, your gentx will be rejected if you use any amount g
 
 ```
 gaiad gentx <key-name> 1000000000uatom --output-document=gentx.json \
-  --chain-id=dvs-course-testnet-1 \
+  --chain-id=school-testnet-1 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --details=<your-node-details> \
@@ -110,7 +110,7 @@ Please “Open pull request”, check data, put some description into text box f
 gaiad tx staking create-validator \
   --amount=1000000000uatom \
   --pubkey=$(gaiad tendermint show-validator) \
-  --chain-id=dvs-course-testnet-1 \
+  --chain-id=school-testnet-1 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --commission-rate="0.10" \
