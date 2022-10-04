@@ -2,13 +2,13 @@
 
 ## **Quick Links**
 
-Genesis: `link`
+Genesis: [link](https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-1/master/genesis.json)
 
-Block explorer: `TBA`
+Block explorer: https://exp.nodeist.net/T-DVS/staking
 
-Seeds: TBA
+Persistent peers: [link](https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-1/master/peers.txt)
 
-Chain Id: TBA
+Chain Id: school-testnet-1
 
 ## **Hardware Requirements**
 
@@ -39,12 +39,12 @@ build_tags: netgo ledger
 
 ### Network init
 
-`cd ~`
-`gaiad init "<moniker-name>" --chain-id <current course chain id>`
+` cd ~ `
+` gaiad init "<moniker-name>" --chain-id school-testnet-1 `
 
 example:
 
-`gaiad init course-participant-1 --chain-id dvs-course-testnet-1`
+`gaiad init course-participant-1 --chain-id school-testnet-1`
 
 ### **Create Validator Key**
 
@@ -76,7 +76,7 @@ Create the gentx file. Note, your gentx will be rejected if you use any amount g
 
 ```
 gaiad gentx <key-name> 1000000000uatom --output-document=gentx.json \
-  --chain-id=dvs-course-testnet-1 \
+  --chain-id=school-testnet-1 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --details=<your-node-details> \
@@ -86,7 +86,7 @@ gaiad gentx <key-name> 1000000000uatom --output-document=gentx.json \
   --min-self-delegation="1"
 ```
 
-After gentx will be ready you can find it in the `~/.gaiad/config/gentx` directory. After that you will be required to upload it into `gentxs` directory of this repository. Please name it using following template `gentx-<validator name>.json`.
+After gentx will be ready you can find it in the `~/.gaia/config/gentx` directory. After that you will be required to upload it into `gentxs` directory of this repository. Please name it using following template `gentx-<validator name>.json`.
 
 In order to upload this file you will need to create fork of this repository. Please click on “Fork” button in the top right corner of this page, and name it somehow or leave repository name unchanged.
 
@@ -110,7 +110,7 @@ Please “Open pull request”, check data, put some description into text box f
 gaiad tx staking create-validator \
   --amount=1000000000uatom \
   --pubkey=$(gaiad tendermint show-validator) \
-  --chain-id=dvs-course-testnet-1 \
+  --chain-id=school-testnet-1 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --commission-rate="0.10" \
@@ -124,50 +124,61 @@ gaiad tx staking create-validator \
 
 ## Run node
 
+### ****Download genesis****
+
+To download genesis:
+
+`$ curl https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-1/master/genesis.json > ~/.gaia/config/genesis.json`
+
+After downloading you need to verify your `genesis.json` checksum
+
+`sha256sum ~/.gaia/config/genesis.json`
+
+you should see `4da7035082a6e1b8b5617cf82fa4ac782a6f598d8d49b93a84862f87349a9459` in the output.
+
 ### ****Set Up Cosmovisor****
 
 Set up cosmovisor to ensure any future upgrades happen flawlessly. To install Cosmovisor:
 
-`go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v1.0.0`
+`go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v1.3.0`
 
 Create the required directories:
 
 ```
-mkdir -p ~/.gaiad/cosmovisor/genesis/bin
-mkdir -p ~/.gaiad/cosmovisor/upgrades
+mkdir -p ~/.gaia/cosmovisor/genesis/bin
+mkdir -p ~/.gaia/cosmovisor/upgrades
 ```
 
-After directories will be ready please copy `gaiad` binaries created in the “Cosmos Hub binaries installation (gaiad)” section into `~/.gaiad/cosmovisor/genesis/bin` directory. You can do it using `cp ~/go/bin/gaiad ~/.gaiad/cosmovisor/genesis/bin/gaiad` command.
+After directories will be ready please copy `gaiad` binaries created in the “Cosmos Hub binaries installation (gaiad)” section into `~/.gaia/cosmovisor/genesis/bin` directory. You can do it using `cp ~/go/bin/gaiad ~/.gaia/cosmovisor/genesis/bin/gaiad` command.
 
 ### ****Set Up Gaiad Service****
 
 Set up a service to allow cosmovisor to run in the background as well as restart automatically if it runs into any problems:
 
 ```
-echo "[Unit]
+sudo tee /etc/systemd/system/gaiad.service > /dev/null <<EOF
+[Unit]
 Description=Cosmos Hub daemon
 After=network-online.target
+
 [Service]
 Environment="DAEMON_NAME=gaiad"
-Environment="DAEMON_HOME=${HOME}/.gaiad"
+Environment="DAEMON_HOME=${HOME}/.gaia"
 Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
 Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
 Environment="DAEMON_LOG_BUFFER_SIZE=512"
 Environment="UNSAFE_SKIP_BACKUP=true"
 User=$USER
-ExecStart=${HOME}/go/bin/cosmovisor start
+ExecStart=${HOME}/go/bin/cosmovisor run start
 Restart=always
 RestartSec=3
 LimitNOFILE=infinity
 LimitNPROC=infinity
+
 [Install]
 WantedBy=multi-user.target
-" >cosmovisor.service
+EOF
 ```
-
-Move this new file to the systemd directory:
-
-`sudo mv cosmovisor.service /lib/systemd/system/gaiad.service`
 
 ## **More about validators**
 
