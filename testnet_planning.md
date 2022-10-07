@@ -52,6 +52,8 @@ In order to find correct proposal you will need to run query command using your 
 **Bonus challenge**
 
 - Make a detailed thread on Twitter about incorrect props, what number you missed, what does it mean and make a PR to the appropriate directory.
+folder "tweets"
+
 
 `5 points =  5000 atom for everyone who provides a peer.`
 
