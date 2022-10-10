@@ -80,17 +80,13 @@ cp sample.json <your_moniker>.json
 
 `5 points =  5000 atom for everyone who do this task.`
 
-- Delegate some DVS to others and redelegate to DVS validator- 10 points
+- Delegate some DVS to others and redelegate to DVS validator
 
 `5 points =  5000 atom for everyone who do this task.`
 
 - Claim reward \ commision and redelegate to DVS validator -
 
 `5 points =  5000 atom for everyone do this task.`
-
-- Tweet url linked in a memo (Come up with something cool to say about DVS Validator Schoo and experience in Testnet)
-
-`5 points =  5000 atom for everyone who provides a peer.`
 
 - Tweet url linked in a memo (Leave your detailed feedback in a thread (from 3 tweets) about the School of Validators. With mark @synctems @POSTHUMAN_DVS @kuraassh. The review must be valid, not just praise. This will be used as a starting point for your twitter accounts and student feedback.)
 
