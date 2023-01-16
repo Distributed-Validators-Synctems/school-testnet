@@ -86,7 +86,7 @@ gaiad gentx <key-name> 1000000000uatom --output-document=$HOME/.gaia/config/gent
   --min-self-delegation="1"
 ```
 
-After gentx will be ready you can find it in the `~/.gaia/config/gentx` directory. After that you will be required to upload it into `gentxs` directory of this repository. Please name it using following template `gentx-<validator name>.json`.
+After gentx will be ready you can find it in the `~/.gaia/config/gentx.json` directory. After that you will be required to upload it into `gentxs` directory of this repository. Please name it using following template `gentx-<validator name>.json`.
 
 In order to upload this file you will need to create fork of this repository. Please click on “Fork” button in the top right corner of this page, and name it somehow or leave repository name unchanged.
 
@@ -110,7 +110,7 @@ Please “Open pull request”, check data, put some description into text box f
 gaiad tx staking create-validator \
   --amount=1000000000uatom \
   --pubkey=$(gaiad tendermint show-validator) \
-  --chain-id=dvs-course-testnet-1 \
+  --chain-id=school-testnet-2 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --commission-rate="0.10" \
