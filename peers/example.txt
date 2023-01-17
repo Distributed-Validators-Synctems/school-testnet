@@ -1,1 +1,2 @@
 89d911a44f40993dabf7d468c21588a1604fe4d7@192.168.3.11:26656 # Validators School. NB! Should contain real IP. Not internal like in this example.
+edcbba91cb23a0c866cf2f44be711c8a16410339@65.108.216.133:26656
