@@ -8,7 +8,7 @@ Block explorer: `TBA`
 
 Seeds: TBA
 
-Chain Id: TBA
+Chain Id: school-testnet-2
 
 ## **Hardware Requirements**
 
@@ -40,11 +40,11 @@ build_tags: netgo ledger
 ### Network init
 
 `cd ~`
-`gaiad init "<moniker-name>" --chain-id <current course chain id>`
+`gaiad init "<moniker-name>" --chain-id school-testnet-2`
 
 example:
 
-`gaiad init course-participant-1 --chain-id dvs-course-testnet-1`
+`gaiad init course-participant-1 --chain-id school-testnet-2`
 
 ### **Create Validator Key**
 
@@ -75,8 +75,8 @@ This command will help you to create account in your local genesis file. It will
 Create the gentx file. Note, your gentx will be rejected if you use any amount greater than 1000000000uatom.
 
 ```
-gaiad gentx <key-name> 1000000000uatom --output-document=gentx.json \
-  --chain-id=dvs-course-testnet-1 \
+gaiad gentx <key-name> 1000000000uatom --output-document=$HOME/.gaia/config/gentx.json \
+  --chain-id=school-testnet-2 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --details=<your-node-details> \
@@ -86,7 +86,7 @@ gaiad gentx <key-name> 1000000000uatom --output-document=gentx.json \
   --min-self-delegation="1"
 ```
 
-After gentx will be ready you can find it in the `~/.gaiad/config/gentx` directory. After that you will be required to upload it into `gentxs` directory of this repository. Please name it using following template `gentx-<validator name>.json`.
+After gentx will be ready you can find it in the `~/.gaia/config/gentx.json` directory. After that you will be required to upload it into `gentxs` directory of this repository. Please name it using following template `gentx-<validator name>.json`.
 
 In order to upload this file you will need to create fork of this repository. Please click on “Fork” button in the top right corner of this page, and name it somehow or leave repository name unchanged.
 
@@ -110,7 +110,7 @@ Please “Open pull request”, check data, put some description into text box f
 gaiad tx staking create-validator \
   --amount=1000000000uatom \
   --pubkey=$(gaiad tendermint show-validator) \
-  --chain-id=dvs-course-testnet-1 \
+  --chain-id=school-testnet-2 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --commission-rate="0.10" \
@@ -133,23 +133,24 @@ Set up cosmovisor to ensure any future upgrades happen flawlessly. To install Co
 Create the required directories:
 
 ```
-mkdir -p ~/.gaiad/cosmovisor/genesis/bin
-mkdir -p ~/.gaiad/cosmovisor/upgrades
+mkdir -p ~/.gaia/cosmovisor/genesis/bin
+mkdir -p ~/.gaia/cosmovisor/upgrades
 ```
 
-After directories will be ready please copy `gaiad` binaries created in the “Cosmos Hub binaries installation (gaiad)” section into `~/.gaiad/cosmovisor/genesis/bin` directory. You can do it using `cp ~/go/bin/gaiad ~/.gaiad/cosmovisor/genesis/bin/gaiad` command.
+After directories will be ready please copy `gaiad` binaries created in the “Cosmos Hub binaries installation (gaiad)” section into `~/.gaia/cosmovisor/genesis/bin` directory. You can do it using `cp ~/go/bin/gaiad ~/.gaia/cosmovisor/genesis/bin/gaiad` command.
 
 ### ****Set Up Gaiad Service****
 
 Set up a service to allow cosmovisor to run in the background as well as restart automatically if it runs into any problems:
 
 ```
-echo "[Unit]
+sudo tee <<EOF >/dev/null /etc/systemd/system/gaiad.service
+[Unit]
 Description=Cosmos Hub daemon
 After=network-online.target
 [Service]
 Environment="DAEMON_NAME=gaiad"
-Environment="DAEMON_HOME=${HOME}/.gaiad"
+Environment="DAEMON_HOME=${HOME}/.gaia"
 Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
 Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
 Environment="DAEMON_LOG_BUFFER_SIZE=512"
@@ -162,16 +163,18 @@ LimitNOFILE=infinity
 LimitNPROC=infinity
 [Install]
 WantedBy=multi-user.target
-" >cosmovisor.service
+EOF
 ```
-
-Move this new file to the systemd directory:
-
-`sudo mv cosmovisor.service /lib/systemd/system/gaiad.service`
+and start service:
+```
+sudo systemctl enable gaiad 
+sudo systemctl daemon-reload
+sudo systemctl restart gaiad
+```
 
 ## **More about validators**
 
-Please refer to the Cosmos Hub documentation on validators for a general overview of running a validator. We are using the exact same validator model and software, but with slightly different parameters and other functionality specific to the Cosmic Horizon Network.
+Please refer to the Cosmos Hub documentation on validators for a general overview of running a validator. We are using the exact same validator model and software, but with slightly different parameters and other functionality specific to the Validator School Network.
 
 - [Run a Validator](https://hub.cosmos.network/main/validators/validator-setup.html)
 - [Validators Overview](https://hub.cosmos.network/main/validators/overview.html)
