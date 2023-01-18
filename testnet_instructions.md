@@ -124,6 +124,18 @@ gaiad tx staking create-validator \
 
 ## Run node
 
+### ****Download genesis****
+
+To download genesis:
+
+`$ curl https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-2/master/genesis.json > ~/.gaia/config/genesis.json`
+
+After downloading you need to verify your `genesis.json` checksum
+
+`sha256sum ~/.gaia/config/genesis.json`
+
+you should see `efc118165b7f968d920c67e99586684209a06d8c7255370101b546d24536ea0e` in the output.
+
 ### ****Set Up Cosmovisor****
 
 Set up cosmovisor to ensure any future upgrades happen flawlessly. To install Cosmovisor:
