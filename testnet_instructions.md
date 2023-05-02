@@ -8,7 +8,7 @@ Block explorer: `TBA`
 
 Persistent peers: `TBA`
 
-Chain Id: `school-testnet-2`
+Chain Id: `school-testnet-3`
 
 ## **Hardware Requirements**
 
