@@ -32,8 +32,8 @@ For the sake of simplicity we decided to use Cosmos Hub service binary. In order
 ```
 name: gaia
 server_name: gaiad
-version: v7.0.2
-commit: cd27aaaf39cc7819b5164e4baf3fd5aad23ec52a
+version: v9.0.0
+commit: 682770f2410ab0d33ac7f0c7203519d7a99fa2b6
 build_tags: netgo ledger
 ```
 
