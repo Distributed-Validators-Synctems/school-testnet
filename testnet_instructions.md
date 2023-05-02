@@ -21,7 +21,7 @@ Here are the minimal hardware configs required for running a validator/sentry no
 ## **Software Requirements**
 
 - Ubuntu 20.04+ or Debian 10+
-- [Go v1.18+](https://golang.org/doc/install)
+- [Go v1.20+](https://golang.org/doc/install)
 
 ## **Install Gaiad, Generate Wallet and Submit GenTx**
 
