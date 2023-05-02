@@ -6,9 +6,9 @@ Genesis: `link`
 
 Block explorer: `TBA`
 
-Seeds: TBA
+Persistent peers: `TBA`
 
-Chain Id: TBA
+Chain Id: `school-testnet-2`
 
 ## **Hardware Requirements**
 
@@ -40,11 +40,11 @@ build_tags: netgo ledger
 ### Network init
 
 `cd ~`
-`gaiad init "<moniker-name>" --chain-id <current course chain id>`
+`gaiad init "<moniker-name>" --chain-id school-testnet-3`
 
 example:
 
-`gaiad init course-participant-1 --chain-id dvs-course-testnet-1`
+`gaiad init course-participant-1 --chain-id school-testnet-3`
 
 ### **Create Validator Key**
 
@@ -76,7 +76,7 @@ Create the gentx file. Note, your gentx will be rejected if you use any amount g
 
 ```
 gaiad gentx <key-name> 1000000000uatom --output-document=gentx.json \
-  --chain-id=dvs-course-testnet-1 \
+  --chain-id=school-testnet-3 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --details=<your-node-details> \
@@ -123,6 +123,18 @@ gaiad tx staking create-validator \
 ```
 
 ## Run node
+
+### ****Download genesis****
+
+To download genesis:
+
+`$ curl https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-3/master/genesis.json > ~/.gaia/config/genesis.json`
+
+After downloading you need to verify your `genesis.json` checksum
+
+`sha256sum ~/.gaia/config/genesis.json`
+
+you should see `TBD` in the output.
 
 ### ****Set Up Cosmovisor****
 
