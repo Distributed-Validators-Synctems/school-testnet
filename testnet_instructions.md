@@ -110,7 +110,7 @@ Please “Open pull request”, check data, put some description into text box f
 gaiad tx staking create-validator \
   --amount=1000000000uatom \
   --pubkey=$(gaiad tendermint show-validator) \
-  --chain-id=dvs-course-testnet-1 \
+  --chain-id=school-testnet-3 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --commission-rate="0.10" \
