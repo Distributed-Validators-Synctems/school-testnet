@@ -2,7 +2,7 @@
 
 ## **Quick Links**
 
-Genesis: `link`
+Genesis: [https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-3/master/genesis.json](https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-3/master/genesis.json)
 
 Block explorer: `TBA`
 
@@ -134,7 +134,7 @@ After downloading you need to verify your `genesis.json` checksum
 
 `sha256sum ~/.gaia/config/genesis.json`
 
-you should see `TBD` in the output.
+you should see `c5fa263847b4bf85e554899b67272cb37bb09e1638730ca82e2bca7c1ab89651` in the output.
 
 ### ****Set Up Cosmovisor****
 
@@ -175,6 +175,13 @@ LimitNPROC=infinity
 [Install]
 WantedBy=multi-user.target
 " >cosmovisor.service
+```
+
+and start service:
+```
+sudo systemctl daemon-reload
+sudo systemctl enable gaiad 
+sudo systemctl restart gaiad
 ```
 
 Move this new file to the systemd directory:
