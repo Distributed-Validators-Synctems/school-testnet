@@ -19,7 +19,7 @@ Everything is subject to change and as close as possible to the realities of tes
 
  `25 Points = 25 000 atom for successful wallet submissions.`
 
-- Network start time:  `05.05.2023 16:00 UTC`
+- Network start time:  `05.05.2023 16:10 UTC`
 
 `20 Points = 20 000 atom for set up post genesis validators.`
 
