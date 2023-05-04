@@ -177,16 +177,22 @@ WantedBy=multi-user.target
 " >cosmovisor.service
 ```
 
-and start service:
+Move this new file to the systemd directory:
+
+`sudo mv cosmovisor.service /lib/systemd/system/gaiad.service`
+
+And start service:
+
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable gaiad 
 sudo systemctl restart gaiad
 ```
 
-Move this new file to the systemd directory:
-
-`sudo mv cosmovisor.service /lib/systemd/system/gaiad.service`
+How you can check the logs
+```
+sudo journalctl -u gaiad -f
+```
 
 ## **More about validators**
 
