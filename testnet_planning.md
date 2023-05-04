@@ -47,28 +47,13 @@ In order to find correct proposal you will need to run query command using your 
 
 - Review the parameter change proposal and cast your vote before voting period endtime.
 
-`25 Points = 25 000 atom for successful wallet submissions.`
+`25 Points = 25 000 atom for successful vote.`
 
 **Bonus challenge**
 
-- Make a detailed thread on Twitter about incorrect props, what number you missed, what does it mean and make a PR to the appropriate directory.
+- Make a detailed thread on Twitter about incorrect props, what number you missed, what does it mean and make a PR to the appropriate directory. [Tweet directory](https://github.com/Distributed-Validators-Synctems/school-testnet-3/tree/master/tweet)
 
-`5 points =  5000 atom for everyone who provides a peer.`
-
-<aside>
-📌 Instructions to submit the PR:
-
-- Clone dvs/testnets1 repo,
-```
-git clone url/testnets/flow1
-cd testnets1
-git pull origin main
-cd testnets1/tasks/Phase-1/genesis
-cp sample.json <your_moniker>.json
-```
-- Add/Update the details - provide txhash of peerID in a transaction memo
-- Push to the repo and create a PR
-</aside>
+`5 points =  5000 atom for everyone who provides a PR url Twitter thread.`
 
 ---
 
