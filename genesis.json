@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-05-05T16:10:00Z",
+  "genesis_time": "2023-05-05T16:45:00Z",
   "chain_id": "school-testnet-3",
   "initial_height": "1",
   "consensus_params": {
@@ -143,7 +143,7 @@
       "supply": [
         {
           "denom": "uatom",
-          "amount": "2000000000000"
+          "amount": "2009009000000"
         }
       ],
       "denom_metadata": []
