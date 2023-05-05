@@ -134,7 +134,7 @@ After downloading you need to verify your `genesis.json` checksum
 
 `sha256sum ~/.gaia/config/genesis.json`
 
-you should see `c5fa263847b4bf85e554899b67272cb37bb09e1638730ca82e2bca7c1ab89651` in the output.
+you should see `8f1308d64c67f61cd4c7e274d933997371d39f6902b4cbe2f140a7c7b10bbee6` in the output.
 
 ### ****Set Up Cosmovisor****
 
