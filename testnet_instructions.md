@@ -161,7 +161,7 @@ Description=Cosmos Hub daemon
 After=network-online.target
 [Service]
 Environment="DAEMON_NAME=gaiad"
-Environment="DAEMON_HOME=${HOME}/.gaiad"
+Environment="DAEMON_HOME=${HOME}/.gaia"
 Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
 Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
 Environment="DAEMON_LOG_BUFFER_SIZE=512"
