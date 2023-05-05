@@ -145,11 +145,11 @@ Set up cosmovisor to ensure any future upgrades happen flawlessly. To install Co
 Create the required directories:
 
 ```
-mkdir -p ~/.gaiad/cosmovisor/genesis/bin
-mkdir -p ~/.gaiad/cosmovisor/upgrades
+mkdir -p ~/.gaia/cosmovisor/genesis/bin
+mkdir -p ~/.gaia/cosmovisor/upgrades
 ```
 
-After directories will be ready please copy `gaiad` binaries created in the “Cosmos Hub binaries installation (gaiad)” section into `~/.gaiad/cosmovisor/genesis/bin` directory. You can do it using `cp ~/go/bin/gaiad ~/.gaiad/cosmovisor/genesis/bin/gaiad` command.
+After directories will be ready please copy `gaiad` binaries created in the “Cosmos Hub binaries installation (gaiad)” section into `~/.gaiad/cosmovisor/genesis/bin` directory. You can do it using `cp ~/go/bin/gaiad ~/.gaia/cosmovisor/genesis/bin/gaiad` command.
 
 ### ****Set Up Gaiad Service****
 
