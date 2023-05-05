@@ -126,6 +126,9 @@ gaiad tx staking create-validator \
 
 ### ****Download genesis****
 
+Install `curl`
+`sudo apt install curl -y`
+
 To download genesis:
 
 `$ curl https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-3/master/genesis.json > ~/.gaia/config/genesis.json`
