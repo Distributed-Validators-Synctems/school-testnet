@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-05-05T16:45:00Z",
+  "genesis_time": "2023-05-09T15:30:00Z",
   "chain_id": "school-testnet-3",
   "initial_height": "1",
   "consensus_params": {
@@ -33,7 +33,70 @@
       "accounts": [
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "cosmos1ymyqkw6gu5fus4llcex996yu9997chv80ukcm9",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "cosmos19t3jghm48786fucdjq3hgzyg0qucrrtyech32n",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "cosmos1fsfdrpkuf9s00lg43qv3yvw4tvdvzy32wd9p3d",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "cosmos12cks3rm42fnysqrgrxeujkv6vkq6u03gr075ru",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "cosmos139jt9w7g8h8k226pejjzzyerkhyfrz2rtt5nfn",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
           "address": "cosmos13mcdm3etgl66fqycsu5n8th5e9vx4kdetp4zw3",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "cosmos1hxr5ga8tgft044qk3sl7pfr0t8suzc4p7j6cv8",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "cosmos1cr3m3l3krtnqckmsde5rlv7338h8w3724jrucp",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "cosmos1udjcpeh30jhq9r3tdn6jfcqprghvgc22qes3kh",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "cosmos1ay2mkqrkx0ajgfn4sfpxcsf8yte44aslagrzxq",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
