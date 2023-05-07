@@ -124,41 +124,47 @@ gaiad tx staking create-validator \
 
 ## Run node
 
+Install `curl`
+```
+sudo apt install curl -y
+```
+
 ### ****Download genesis****
 
-Install `curl`
-`sudo apt install curl -y`
-
-To download genesis:
-
-`$ curl https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-3/master/genesis.json > ~/.gaia/config/genesis.json`
-
+To download genesis
+```
+curl https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-3/master/genesis.json > ~/.gaia/config/genesis.json
+```
 After downloading you need to verify your `genesis.json` checksum
 
-`sha256sum ~/.gaia/config/genesis.json`
+```
+sha256sum ~/.gaia/config/genesis.json
+```
 
-you should see `8f1308d64c67f61cd4c7e274d933997371d39f6902b4cbe2f140a7c7b10bbee6` in the output.
+you should see `731c4491bb7f5a85c2d668ff31bc09d9cae50e04c4d01e2c17a283e58843aa57` in the output.
 
 ### ****Set Up Cosmovisor****
 
-Set up cosmovisor to ensure any future upgrades happen flawlessly. To install Cosmovisor:
+Set up cosmovisor to ensure any future upgrades happen flawlessly. To install Cosmovisor
+```
+go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v1.0.0
+```
 
-`go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v1.0.0`
-
-Create the required directories:
-
+Create the required directories and files
 ```
 mkdir -p ~/.gaia/cosmovisor/genesis/bin
 mkdir -p ~/.gaia/cosmovisor/upgrades
-echo "" | sed 's/.*/{}/' > ~/.gaia/cosmovisor/current/upgrade-info.json
+echo "" | sed 's/.*/{}/' > ~/.gaia/cosmovisor/genesis/upgrade-info.json
 ```
 
-After directories will be ready please copy `gaiad` binaries created in the “Cosmos Hub binaries installation (gaiad)” section into `~/.gaiad/cosmovisor/genesis/bin` directory. You can do it using `cp ~/go/bin/gaiad ~/.gaia/cosmovisor/genesis/bin/gaiad` command.
+After directories will be ready please copy `gaiad` binaries created in the “Cosmos Hub binaries installation (gaiad)” section into `~/.gaiad/cosmovisor/genesis/bin` directory. You can do it using next command
+```
+cp ~/go/bin/gaiad ~/.gaia/cosmovisor/genesis/bin/gaiad
+```
 
 ### ****Set Up Gaiad Service****
 
 Set up a service to allow cosmovisor to run in the background as well as restart automatically if it runs into any problems:
-
 ```
 echo "[Unit]
 Description=Cosmos Hub daemon
@@ -182,11 +188,11 @@ WantedBy=multi-user.target
 ```
 
 Move this new file to the systemd directory:
-
-`sudo mv cosmovisor.service /lib/systemd/system/gaiad.service`
+```
+sudo mv cosmovisor.service /lib/systemd/system/gaiad.service
+```
 
 And start service:
-
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable gaiad 
