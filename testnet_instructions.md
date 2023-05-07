@@ -204,6 +204,11 @@ How you can check the logs
 sudo journalctl -u gaiad -f
 ```
 
+Set chain-id to `school-testnet-3` (for CLI)
+```
+gaiad config chain-id school-testnet-3
+```
+
 ## **More about validators**
 
 Please refer to the Cosmos Hub documentation on validators for a general overview of running a validator. We are using the exact same validator model and software, but with slightly different parameters and other functionality specific to the Cosmic Horizon Network.
