@@ -31,17 +31,16 @@ Everything is subject to change and as close as possible to the realities of tes
 
 ## **Phase - 2: Governance (max 30 points)**
 
-Lead validator team will create a governance proposal on `06.05.2023 13:00 UTC`, to update the transfer parameter. You will need to study the proposals, find the correct one and vote.
+Lead validator team will create a governance proposal on `10.05.2023 13:00 UTC`, to update the transfer parameter. You will need to study the proposals, find the correct one and vote.
 
 In order to find correct proposal you will need to run query command using your network client binary (`gaiad` in our case). Please issue following command `gaiad query gov proposals`, and find proposal with `title:` ”Vote for me friend”.
 
-**New to upgrades?** Read [this](https://docs.cosmos.network/master/modules/gov)
+**New to governance module?** Read [this](https://docs.cosmos.network/main/modules/gov)
 
 **Update Schedule:**
 
 - Proposal: `Vote for me friend`
-- Voting Period: `06.05.2023 13:00 UTC - 08.05.2023 13:00 UTC`
-- Upgrade Height: `TBD`
+- Voting Period: `10.05.2023 13:00 UTC - 12.05.2023 13:00 UTC`
 
 **What should validators do?**
 
