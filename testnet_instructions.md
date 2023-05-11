@@ -119,6 +119,7 @@ gaiad tx staking create-validator \
   --min-self-delegation="1" \
   --gas="auto" \
   --gas-prices="0.0025uatom" \
+  --gas-adjustment=1.2 \
   --from=<key_name>
 ```
 
