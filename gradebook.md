@@ -2,7 +2,7 @@
 
 | Validator      | Genesis validator | Post genesis validator  | Peer | Vote | Tweet |
 |----------------|:-----------------:|:-----------------------:|:----:|:----:|:-----:|
-| dim_st         |         +         |                         |      |  +   |       |
+| dim_st         |         +         |                         |  +   |  +   |   +   |
 | nomadnode      |         +         |                         |  +   |  +   |   +   |
 | c.construction |                   |            +            |  +   |  +   |   +   |
 | schnellreich   |         +         |                         |  +   |  +   |       |
