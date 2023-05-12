@@ -62,41 +62,25 @@ In order to find correct proposal you will need to run query command using your 
 
 `5 points =  5000 atom for everyone who do this task.`
 
-- Delegate some DVS to others and redelegate to DVS validator- 10 points
+- Delegate some DVS to others and redelegate to DVS validator
 
-`5 points =  5000 atom for everyone who do this task.`
+`10 points =  10000 atom for everyone who do this task.`
 
-- Claim reward \ commision and redelegate to DVS validator -
+- Claim reward \ commision and redelegate to DVS validator
 
 `5 points =  5000 atom for everyone do this task.`
 
-- Tweet url linked in a memo (Come up with something cool to say about DVS Validator Schoo and experience in Testnet)
+- Tweet url linked in a memo (Come up with something cool to say about DVS Validator School and experience in Testnet)
 
 `5 points =  5000 atom for everyone who provides a peer.`
 
-- Tweet url linked in a memo (Leave your detailed feedback in a thread (from 3 tweets) about the School of Validators. With mark @synctems @POSTHUMAN_DVS @kuraassh. The review must be valid, not just praise. This will be used as a starting point for your twitter accounts and student feedback.)
+- Tweet url linked in a memo (Leave your detailed feedback in a thread (from 3 tweets) about the School of Validators. With mark @synctems @POSTHUMAN_DVS @vbloher. The review must be valid, not just praise. This will be used as a starting point for your twitter accounts and student feedback.)
 
 `5 points =  5000 atom for everyone who do this task.`
 
-<aside>
-📌 Participants need to raise a PR with the details onto dvs/testnets/flow repo
+📌 Participants need to raise a PR with the details onto `transactions` directory in this repo
 
-- Time: `date and time wiil be refined for a specific course`
-(Only the txs in this time period are considered to be valid)
-- Instructions to submit the PR:
-    - Clone testnets repo,
-
-    ```
-    $ git clone *link
-    $ cd testnets
-    $ git pull origin main
-    $ cd darkmatter-1/tasks/Phase-1/celebrate
-    $ cp sample.json <your_moniker>.json
-    ```
-
-    - Add/Update the details
-    - Push to the repo and create a PR
-</aside>
+- Time: `12.05.2023 - 15.05.2023` (Only the txs in this time period are considered to be valid)
 
 ---
 
