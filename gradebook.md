@@ -3,10 +3,10 @@
 | Validator      | Genesis validator | Post genesis validator  | Peer | Vote | Tweet |
 |----------------|:-----------------:|:-----------------------:|:----:|:----:|:-----:|
 | dim_st         |         +         |                         |      |  +   |       |
-| nomadnode      |         +         |                         |  +   |      |       |
+| nomadnode      |         +         |                         |  +   |  +   |   +   |
 | c.construction |                   |            +            |  +   |  +   |   +   |
 | schnellreich   |         +         |                         |  +   |  +   |       |
-| nodehound      |         +         |                         |      |      |       |
+| nodehound      |         +         |                         |  +   |  +   |       |
 | SkyG           |         +         |                         |  +   |  +   |       |
 | LIGHTHOUSE     |         +         |                         |  +   |  +   |   +   |
 | BlvckStake     |         +         |                         |  +   |  +   |   +   |
