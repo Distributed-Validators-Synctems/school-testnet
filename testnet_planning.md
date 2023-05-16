@@ -72,12 +72,6 @@ In order to find correct proposal you will need to run query command using your 
 
 - Tweet url linked in a memo (Come up with something cool to say about DVS Validator School and experience in Testnet)
 
-`5 points =  5000 atom for everyone who provides a peer.`
-
-- Tweet url linked in a memo (Leave your detailed feedback in a thread (from 3 tweets) about the School of Validators. With mark @synctems @POSTHUMAN_DVS @vbloher. The review must be valid, not just praise. This will be used as a starting point for your twitter accounts and student feedback.)
-
-`5 points =  5000 atom for everyone who do this task.`
-
 📌 Participants need to raise a PR with the details onto `transactions` directory in this repo
 
 - Time: `16.05.2023 - 18.05.2023` (Only the txs in this time period are considered to be valid)
