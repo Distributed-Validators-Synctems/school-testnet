@@ -4,9 +4,12 @@
 
 Genesis: [https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-3/master/genesis.json](https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-3/master/genesis.json)
 
-Block explorer: `TBA`
+Block explorer: https://explorer.vbloher.com/dvs-school-testnet-3
 
-Persistent peers: `TBA`
+Persistent peers:
+```
+b98a3679300ad89f0e2c3b595393733e9e7393ec@95.216.136.200:26656,6ed02daf3abc121411dde435872b83c35ec81ec0@142.132.144.89:26656,66e9a42a49f0a568e831877925cb0367e087ffa4@95.216.154.36:26656,c26e0f360ee5461ac0443bde6e22d3167a5a18bb@167.86.82.139:26656,9697abb325cd29124dd02dbbac86adba6f8028f5@79.137.248.65:26656
+```
 
 Chain Id: `school-testnet-3`
 
