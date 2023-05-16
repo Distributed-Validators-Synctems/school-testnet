@@ -80,7 +80,7 @@ In order to find correct proposal you will need to run query command using your 
 
 📌 Participants need to raise a PR with the details onto `transactions` directory in this repo
 
-- Time: `12.05.2023 - 15.05.2023` (Only the txs in this time period are considered to be valid)
+- Time: `16.05.2023 - 18.05.2023` (Only the txs in this time period are considered to be valid)
 
 ---
 
