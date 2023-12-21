@@ -2,7 +2,7 @@
 
 ## **Disclaimer**
 
-Everything is subject to change and as close as possible to the realities of testnets that take place in various projects, so at this stage you will learn many useful things in practice**.** Pay attention to the discord validator announcement channel for announcements. We are testing open source beta software. Expect something to break. If the documentation is not enough or you find some kind of bug, make a PR.
+Everything is subject to change and as close as possible to the realities of testnets that take place in various projects, so at this stage you will learn many useful things in practice. Pay attention to the discord validator announcement channel for announcements. We are testing open source beta software. Expect something to break. If the documentation is not enough or you find some kind of bug, make a PR.
 
 ## **Overview**
 
@@ -10,16 +10,16 @@ Everything is subject to change and as close as possible to the realities of tes
 - Governance proposals
     - Enable Transfers
 - Rewards: `To keep the competitive process going, we see the validators with the most points and they will be rewarded`
-- Schedule: `date this`
+- Schedule: ``
 - For the Genesis and Celebrate sections please sign a transaction for each of the tasks and provide the txHash in a PR.
 
 ## **Phase - 1: Start chain (max 30 points)**
 
-- GenTx Validator Address Submission : `date and time wiil be refined for a specific course`. Up to `70% of the flow`  will be accepted.
+- GenTx Validator Address Submission : ` 17:00 UTC`. Up to `100% of the flow` will be accepted.
 
  `25 Points = 25 000 atom for successful wallet submissions.`
 
-- Network start time:  `time start chain wiil be refined for a specific course`
+- Network start time:  ` UTC`
 
 `20 Points = 20 000 atom for set up post genesis validators.`
 
@@ -31,17 +31,16 @@ Everything is subject to change and as close as possible to the realities of tes
 
 ## **Phase - 2: Governance (max 30 points)**
 
-Lead validator team will create a governance proposal on `date wiil be refined for a specific course`, to update the transfer parameter. You will need to study the proposals, find the correct one and vote.
+Lead validator team will create a governance proposal on `21.09.2023 13:00 UTC`, to update the transfer parameter. You will need to study the proposals, find the correct one and vote.
 
 In order to find correct proposal you will need to run query command using your network client binary (`gaiad` in our case). Please issue following command `gaiad query gov proposals`, and find proposal with `title:` ”Vote for me friend”.
 
-**New to upgrades?** Read [this](https://docs.cosmos.network/master/modules/gov)
+**New to governance module?** Read [this](https://docs.cosmos.network/main/modules/gov)
 
-**Update Schedule:**
+**Voting Schedule:**
 
-- Proposal: `date and time wiil be refined for a specific course`
-- Voting Period: `date and time proposal wiil be refined for a specific course`
-- Upgrade Height: `TBD`
+- Proposal: `Vote for me friend`
+- Voting Period: `21.09.2023 13:00 UTC - 24.09.2023 13:00 UTC`
 
 **What should validators do?**
 
@@ -51,67 +50,35 @@ In order to find correct proposal you will need to run query command using your 
 
 **Bonus challenge**
 
-- Make a detailed thread on Twitter about incorrect props, what number you missed, what does it mean and make a PR to the appropriate directory.
+- Make a detailed thread on Twitter about incorrect props, what number you missed, what does it mean and make a PR to the `tweets` directory of this repo.
 
-`5 points =  5000 atom for everyone who provides a peer.`
-
-<aside>
-📌 Instructions to submit the PR:
-
-- Clone dvs/testnets1 repo,
-```
-git clone url/testnets/flow1
-cd testnets1
-git pull origin main
-cd testnets1/tasks/Phase-1/genesis
-cp sample.json <your_moniker>.json
-```
-- Add/Update the details - provide txhash of peerID in a transaction memo
-- Push to the repo and create a PR
-</aside>
+`5 points =  5000 atom for everyone who provides a tweet url.`
 
 ---
 
-## P**hase-3: Transactions (max 30 points)**
+## **Phase-3: Transactions (max 30 points)**
 
 - Send 1atom to DVS validator
 
 `5 points =  5000 atom for everyone who do this task.`
 
-- Delegate some DVS to others and redelegate to DVS validator- 10 points
+- Delegate some DVS to others and redelegate to DVS validator
 
 `5 points =  5000 atom for everyone who do this task.`
 
-- Claim reward \ commision and redelegate to DVS validator -
+- Claim reward \ commission and redelegate to DVS validator
 
 `5 points =  5000 atom for everyone do this task.`
 
-- Tweet url linked in a memo (Come up with something cool to say about DVS Validator Schoo and experience in Testnet)
+- Tweet url linked in a memo (Come up with something cool to say about DVS Validator School and experience in Testnet)
 
-`5 points =  5000 atom for everyone who provides a peer.`
-
-- Tweet url linked in a memo (Leave your detailed feedback in a thread (from 3 tweets) about the School of Validators. With mark @synctems @POSTHUMAN_DVS @kuraassh. The review must be valid, not just praise. This will be used as a starting point for your twitter accounts and student feedback.)
-
-`5 points =  5000 atom for everyone who do this task.`
+`5 points =  5000 atom for everyone do this task.`
 
 <aside>
-📌 Participants need to raise a PR with the details onto dvs/testnets/flow repo
+📌 Participants need to raise a PR with the details onto the `transactions` directory of this repo
 
-- Time: `date and time wiil be refined for a specific course`
+- Time: `25.09.2023 15:00 UTC - 28.09.2023 15:00 UTC`
 (Only the txs in this time period are considered to be valid)
-- Instructions to submit the PR:
-    - Clone testnets repo,
-
-    ```
-    $ git clone *link
-    $ cd testnets
-    $ git pull origin main
-    $ cd darkmatter-1/tasks/Phase-1/celebrate
-    $ cp sample.json <your_moniker>.json
-    ```
-
-    - Add/Update the details
-    - Push to the repo and create a PR
 </aside>
 
 ---
@@ -124,7 +91,9 @@ cp sample.json <your_moniker>.json
     - 70% ≤ uptime ≥ 80%
 
 `20 points =  20000 atom for everyone who have 90+% uptime`
+
 `10 points =  10000 atom for everyone who have 80-90% uptime`
+
 `5 points =  5000 atom for everyone who have 70-80% uptime`
 
 - Never jailed validator :
