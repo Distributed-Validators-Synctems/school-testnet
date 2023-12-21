@@ -41,13 +41,13 @@ build_tags: netgo ledger
 
 ```bash
 cd ~
-gaiad init "<moniker-name>" --chain-id school-testnet-4
+gaiad init "<moniker-name>" --chain-id school-testnet-5
 ```
 
 example:
 
 ```bash
-gaiad init course-participant-1 --chain-id dvs-course-testnet-4
+gaiad init course-participant-1 --chain-id dvs-course-testnet-5
 ```
 
 ### **Create Validator Key**
