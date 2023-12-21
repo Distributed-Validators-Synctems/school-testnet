@@ -70,7 +70,7 @@ Check your key:
 
 ### ****Create account to genesis****
 
-This command will help you to create account in your local genesis file. It will add funds to your address. Otherwise `gaiad getntx` command will fail because of lack of funds.
+This command will help you to create account in your local genesis file. It will add funds to your address. Otherwise `gaiad gentx` command will fail because of lack of funds.
 
 `gaiad add-genesis-account <key-name> 1000000000uatom`
 
@@ -80,7 +80,7 @@ Create the gentx file. Note, your gentx will be rejected if you use any amount g
 
 ```
 gaiad gentx <key-name> 1000000000uatom \
-  --chain-id=school-testnet-4 \
+  --chain-id=school-testnet-5 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --details=<your-node-details> \
