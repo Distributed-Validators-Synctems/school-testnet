@@ -10,16 +10,16 @@ Everything is subject to change and as close as possible to the realities of tes
 - Governance proposals
     - Enable Transfers
 - Rewards: `To keep the competitive process going, we see the validators with the most points and they will be rewarded`
-- Schedule: `14.09.2023 - 05.10.2023`
+- Schedule: ``
 - For the Genesis and Celebrate sections please sign a transaction for each of the tasks and provide the txHash in a PR.
 
 ## **Phase - 1: Start chain (max 30 points)**
 
-- GenTx Validator Address Submission : `14.09.2023 - 17.09.2023 17:00 UTC`. Up to `100% of the flow` will be accepted.
+- GenTx Validator Address Submission : ` 17:00 UTC`. Up to `100% of the flow` will be accepted.
 
  `25 Points = 25 000 atom for successful wallet submissions.`
 
-- Network start time:  `18.09.2023 15:45 UTC`
+- Network start time:  ` UTC`
 
 `20 Points = 20 000 atom for set up post genesis validators.`
 
