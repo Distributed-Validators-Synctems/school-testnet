@@ -17,7 +17,7 @@ build_tags: netgo ledger
 
 ### Init
 ```bash:
-gaiad init "<moniker-name>" --chain-id <current course chain id>
+gaiad init "<moniker-name>" --chain-id school-testnet-2
 ```
 
 ### Generate keys
@@ -57,7 +57,7 @@ gaiad add-genesis-account <key-name> 1000000000uatom --keyring-backend <os | fil
 # Create the gentx.
 # Note, your gentx will be rejected if you use any amount greater than 1000000000uatom.
 gaiad gentx <key-name> 1000000000uatom --output-document=gentx.json \
-  --chain-id=dvs-protocol-v1 \
+  --chain-id=school-testnet-2 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --details=<your-node-details> \
