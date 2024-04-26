@@ -1,15 +1,16 @@
-# Validators School testnet
+# Validators School Sputnik Testnet
 
 
-## Cosmos Hub binaries installation (gaiad)
+## Sputnik app-chain binaries installation (sputnikd)
 
-For the sake of simplicity we decided to use Cosmos Hub service binary. In order to install it please follow steps from this [instruction](https://hub.cosmos.network/main/getting-started/installation.html). It is based on the `v7.0.2` version of `gaiad` binary.
-Please check versiob of used bianry by running this command `gaiad version --long`. You should get big list of text and at the beginig of it you should have following lines:
+Sputnik app testnet binary repo
+https://github.com/Distributed-Validators-Synctems/sputnik-app-chain-practice
+
 ```
-name: gaia
-server_name: gaiad
-version: v7.0.2
-commit: cd27aaaf39cc7819b5164e4baf3fd5aad23ec52a
+name: SputnikApp
+server_name: sputnikd
+version: v15.2.0
+commit: 7281c9b9dc4e3087ee87f5b24e416802b52e8661
 build_tags: netgo ledger
 ```
 
@@ -17,38 +18,38 @@ build_tags: netgo ledger
 
 ### Init
 ```bash:
-gaiad init "<moniker-name>" --chain-id <current course chain id>
+sputnikd init "<moniker-name>" --chain-id <current course chain id>
 ```
 
 ### Generate keys
 
 ```bash:
 # To create new keypair - make sure you save the mnemonics!
-gaiad keys add <key-name> 
+sputnikd keys add <key-name> 
 ```
 
 or
 ```
 # Restore existing odin wallet with mnemonic seed phrase. 
 # You will be prompted to enter mnemonic seed. 
-gaiad keys add <key-name> --recover
+sputnikd keys add <key-name> --recover
 ```
 or
 ```
 # Add keys using ledger
-gaiad keys show <key-name> --ledger
+sputnikd keys show <key-name> --ledger
 ```
 
 Check your key:
 ```
 # Query the keystore for your public address 
-gaiad keys show <key-name> -a
+sputnikd keys show <key-name> -a
 ```
 
 ### Create account to genesis
 
 ```
-gaiad add-genesis-account <key-name> 1000000000uatom --keyring-backend <os | file>
+sputnikd add-genesis-account <key-name> 1000000000uatom --keyring-backend <os | file>
 ```
 
 ### Create GenTX
@@ -56,8 +57,8 @@ gaiad add-genesis-account <key-name> 1000000000uatom --keyring-backend <os | fil
 ```
 # Create the gentx.
 # Note, your gentx will be rejected if you use any amount greater than 1000000000uatom.
-gaiad gentx <key-name> 1000000000uatom --output-document=gentx.json \
-  --chain-id=dvs-protocol-v1 \
+sputnikd gentx <key-name> 1000000000uatom --output-document=gentx.json \
+  --chain-id=<current course chain id> \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --details=<your-node-details> \
